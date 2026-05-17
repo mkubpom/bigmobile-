@@ -35,7 +35,6 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
 .admin-btn{background:none;border:.5px solid #334155;color:#94a3b8;font-size:12px;padding:6px 13px;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:5px;font-family:inherit;transition:all .15s}
 .admin-btn:hover{border-color:#0ea5e9;color:#0ea5e9}
 .admin-btn.on{border-color:#f97316;color:#f97316;background:rgba(249,115,22,.08)}
-
 .page{display:none}.page.active{display:block}
 
 /* HOME */
@@ -55,7 +54,7 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
 .home-cat i{font-size:26px;display:block;margin-bottom:7px;color:#7dd3fc}
 .home-cat span{font-size:12px;color:#e2e8f0;font-weight:500}
 
-/* PRICE */
+/* PRICE PAGE */
 .add-panel{background:#fffbeb;border-bottom:1px solid #fde68a;padding:12px 20px}
 .add-panel h3{font-size:12px;font-weight:600;color:#92400e;margin-bottom:8px;display:flex;align-items:center;gap:5px}
 .fg{display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap}
@@ -123,22 +122,18 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
 .empty-row td{text-align:center;padding:50px;color:#94a3b8;font-size:14px}
 
 /* CONTENT PAGES */
-.cpg{padding:28px 32px;max-width:900px;margin:0 auto}
+.cpg{padding:28px 32px;max-width:960px;margin:0 auto}
 .phero{background:linear-gradient(135deg,#0f172a,#1e3a5f);border-radius:14px;padding:32px 24px;text-align:center;color:#fff;margin-bottom:20px}
 .phero .hico{font-size:40px;display:block;margin-bottom:10px;opacity:.9}
 .phero h1{font-size:21px;font-weight:700;margin-bottom:4px}
 .phero p{font-size:13px;color:#94a3b8}
-
-/* URL badge แสดง link ปัจจุบัน */
-.url-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(14,165,233,.15);border:1px solid rgba(14,165,233,.3);border-radius:100px;padding:4px 12px;font-size:11px;color:#7dd3fc;margin-top:10px;font-family:monospace;cursor:pointer;transition:all .15s}
-.url-badge:hover{background:rgba(14,165,233,.25)}
-.url-badge i{font-size:12px}
-
 .etb{display:flex;gap:8px;margin-bottom:12px;align-items:center;flex-wrap:wrap}
 .ebtn{padding:7px 14px;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:5px;border:.5px solid #e2e8f0;background:#fff;color:#475569;transition:all .15s}
 .ebtn:hover{border-color:#0ea5e9;color:#0ea5e9}
 .ebtn.pri{background:#0ea5e9;color:#fff;border-color:#0ea5e9}
 .ebtn.pri:hover{background:#0284c7}
+.ebtn.danger{border-color:#fca5a5;color:#dc2626}
+.ebtn.danger:hover{background:#fee2e2}
 .ebtn:disabled{opacity:.5;cursor:not-allowed}
 .sconf{background:#dcfce7;border:.5px solid #bbf7d0;border-radius:7px;padding:6px 12px;font-size:12px;color:#15803d;display:none;align-items:center;gap:5px;margin-left:auto}
 .sconf.show{display:flex}
@@ -155,32 +150,29 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
 .empty-cnt i{font-size:36px;display:block;margin-bottom:8px;opacity:.3}
 .loading-cnt{text-align:center;padding:40px;color:#94a3b8;font-size:13px}
 
-/* NOHON */
-.upload-area{border:2px dashed #e2e8f0;border-radius:12px;padding:28px;text-align:center;cursor:pointer;transition:all .2s;background:#f8fafc;margin-bottom:14px}
-.upload-area:hover,.upload-area.dv{border-color:#0ea5e9;background:#eff6ff}
-.upload-area i{font-size:32px;color:#94a3b8;display:block;margin-bottom:8px}
-.upload-area p{font-size:13px;color:#64748b}
-.upload-area small{font-size:11px;color:#94a3b8}
-.upload-area input{display:none}
-.ubtn{padding:9px 20px;background:#0ea5e9;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:6px;margin-top:10px}
-.ubtn:hover{background:#0284c7}
-.aist{padding:10px 14px;border-radius:10px;font-size:13px;margin-bottom:14px;display:none;align-items:center;gap:10px}
-.aist.proc{background:#fef3c7;border:.5px solid #fde68a;color:#92400e;display:flex}
-.aist.done{background:#dcfce7;border:.5px solid #bbf7d0;color:#15803d;display:flex}
-.aist.fail{background:#fee2e2;border:.5px solid #fca5a5;color:#dc2626;display:flex}
-.ntbl-wrap{overflow-x:auto;border:.5px solid #e2e8f0;border-radius:10px}
-.ntbl{width:100%;border-collapse:collapse;font-size:13px}
-.ntbl th{padding:9px 14px;text-align:left;background:#f8fafc;color:#64748b;font-weight:600;font-size:11px;border-bottom:1.5px solid #e2e8f0;white-space:nowrap}
-.ntbl td{padding:8px 14px;border-bottom:.5px solid #f1f5f9;color:#1e293b}
-.ntbl tr:hover td{background:#f0f9ff}
-.ntbl .pc{color:#0369a1;font-weight:600}
-.clr-btn{margin-top:10px;padding:7px 14px;background:none;border:.5px solid #fca5a5;color:#dc2626;border-radius:7px;font-size:12px;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:5px}
-.clr-btn:hover{background:#fee2e2}
-.info-box{background:#eff6ff;border:.5px solid #bfdbfe;border-radius:10px;padding:14px 16px;font-size:13px;color:#1e40af;display:flex;align-items:center;gap:10px}
+/* NOHON PDF VIEWER */
+.nohon-admin-panel{background:#fffbeb;border:.5px solid #fde68a;border-radius:12px;padding:16px 20px;margin-bottom:16px}
+.nohon-admin-panel h3{font-size:13px;font-weight:600;color:#92400e;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.url-input-wrap{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.url-input{flex:1;min-width:200px;padding:9px 12px;border:.5px solid #d6d3d1;border-radius:8px;font-size:12px;font-family:monospace;color:#1c1917;background:#fff}
+.url-input:focus{outline:none;border-color:#f97316;box-shadow:0 0 0 2px #fed7aa}
+.url-save-btn{padding:9px 18px;background:#f97316;color:#fff;border:none;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap;display:flex;align-items:center;gap:5px}
+.url-save-btn:hover{background:#ea580c}
+.url-hint{font-size:11px;color:#92400e;margin-top:8px;line-height:1.6}
+.url-hint code{background:#fef9c3;padding:1px 5px;border-radius:3px;font-size:11px}
+.url-saved-msg{font-size:11px;color:#15803d;margin-top:6px;display:none;align-items:center;gap:4px}
+.url-saved-msg.show{display:flex}
 
-/* COPY TOAST */
-.copy-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:#0f172a;color:#fff;font-size:13px;padding:10px 20px;border-radius:100px;opacity:0;transition:all .25s;z-index:9999;pointer-events:none;display:flex;align-items:center;gap:6px}
-.copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.pdf-viewer-wrap{border:.5px solid #e2e8f0;border-radius:12px;overflow:hidden;background:#f8fafc}
+.pdf-toolbar{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:#0f172a;border-bottom:.5px solid #1e293b}
+.pdf-toolbar-title{color:#e2e8f0;font-size:13px;font-weight:500;display:flex;align-items:center;gap:7px}
+.pdf-open-btn{display:flex;align-items:center;gap:5px;padding:6px 14px;background:#0ea5e9;color:#fff;border:none;border-radius:7px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;text-decoration:none}
+.pdf-open-btn:hover{background:#0284c7}
+.pdf-frame{width:100%;height:calc(100vh - 220px);min-height:500px;border:none;display:block}
+.pdf-no-url{text-align:center;padding:60px 20px;color:#94a3b8}
+.pdf-no-url i{font-size:48px;display:block;margin-bottom:12px;opacity:.3}
+.pdf-no-url p{font-size:14px;margin-bottom:6px}
+.pdf-no-url small{font-size:12px;color:#cbd5e1}
 
 /* LOGIN */
 .lov{position:fixed;inset:0;background:rgba(15,23,42,.6);display:flex;align-items:center;justify-content:center;z-index:2000;padding:20px}
@@ -196,12 +188,11 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
 .lcnl{padding:9px 14px;border:.5px solid #e2e8f0;border-radius:8px;font-size:13px;color:#64748b;background:#fff;cursor:pointer;font-family:inherit}
 .lgo{flex:1;padding:9px;background:#0ea5e9;color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
 .lgo:hover{background:#0284c7}
+
 @media(max-width:768px){
-  .cpg{padding:16px}
-  .home-hero{padding:36px 16px}
-  .home-hero h1{font-size:20px}
-  .home-cats{grid-template-columns:repeat(3,1fr)}
-  .tbl thead th,.tbl td{padding:8px 10px;font-size:12px}
+  .cpg{padding:16px}.home-hero{padding:36px 16px}.home-hero h1{font-size:20px}
+  .home-cats{grid-template-columns:repeat(3,1fr)}.tbl thead th,.tbl td{padding:8px 10px;font-size:12px}
+  .pdf-frame{height:60vh;min-height:300px}
 }
 </style>
 </head>
@@ -221,7 +212,7 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
           <i class="ti ti-layout-grid"></i><span> รายการสินค้า</span>
           <i class="ti ti-chevron-down chevron"></i>
         </button>
-        <div class="dropdown" id="dd-products">
+        <div class="dropdown">
           <div class="dd-label">จอ / หน้าจอ</div>
           <button class="dd-item" onclick="goToTab('iPhone')"><i class="ti ti-brand-apple"></i>iPhone</button>
           <button class="dd-item" onclick="goToTab('IPad')"><i class="ti ti-device-ipad"></i>iPad</button>
@@ -244,27 +235,13 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
           <button class="dd-item" onclick="goToTab('OCA + Touch IPad ')"><i class="ti ti-device-ipad"></i>OCA + Touch iPad</button>
         </div>
       </div>
-      <div class="nav-item">
-        <button class="nav-link" id="nl-nohon" onclick="gotoPage('nohon')">
-          <i class="ti ti-tag"></i><span> ราคา NOHON</span>
-        </button>
-      </div>
-      <div class="nav-item">
-        <button class="nav-link" id="nl-warranty" onclick="gotoPage('warranty')">
-          <i class="ti ti-shield-check"></i><span> การรับประกัน</span>
-        </button>
-      </div>
-      <div class="nav-item">
-        <button class="nav-link" id="nl-contact" onclick="gotoPage('contact')">
-          <i class="ti ti-message-circle"></i><span> ติดต่อสอบถาม</span>
-        </button>
-      </div>
+      <div class="nav-item"><button class="nav-link" id="nl-nohon" onclick="gotoPage('nohon')"><i class="ti ti-tag"></i><span> ราคา NOHON</span></button></div>
+      <div class="nav-item"><button class="nav-link" id="nl-warranty" onclick="gotoPage('warranty')"><i class="ti ti-shield-check"></i><span> การรับประกัน</span></button></div>
+      <div class="nav-item"><button class="nav-link" id="nl-contact" onclick="gotoPage('contact')"><i class="ti ti-message-circle"></i><span> ติดต่อสอบถาม</span></button></div>
     </div>
     <div class="nav-right">
       <span class="stat-pill" id="stat-pill" style="display:none">—</span>
-      <button class="admin-btn" id="admin-btn" onclick="handleAdmin()">
-        <i class="ti ti-shield"></i><span id="admin-txt"> แอดมิน</span>
-      </button>
+      <button class="admin-btn" id="admin-btn" onclick="handleAdmin()"><i class="ti ti-shield"></i><span id="admin-txt"> แอดมิน</span></button>
     </div>
   </div>
 </nav>
@@ -297,7 +274,7 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
   </div>
 </div>
 
-<!-- PRICE -->
+<!-- PRICE PAGE -->
 <div class="page" id="page-price">
   <div id="add-panel" class="add-panel" style="display:none">
     <h3><i class="ti ti-plus"></i> เพิ่มสินค้าใหม่</h3>
@@ -335,49 +312,57 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
   </div>
   <div id="gsres" class="gsres" style="display:none"></div>
   <div id="tab-view">
-    <div class="tbl-outer">
-      <table class="tbl"><thead id="thead"></thead><tbody id="tbody"></tbody></table>
-    </div>
+    <div class="tbl-outer"><table class="tbl"><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
   </div>
 </div>
 
-<!-- NOHON -->
+<!-- NOHON PAGE — แสดง PDF -->
 <div class="page" id="page-nohon">
   <div class="cpg">
     <div class="phero">
       <i class="ti ti-tag hico"></i>
       <h1>ราคาสินค้า NOHON</h1>
-      <p>อัปโหลด PDF รายการราคา AI จะแปลงเป็นตารางให้อัตโนมัติ</p>
-      <div class="url-badge" onclick="copyUrl('#nohon')">
-        <i class="ti ti-link"></i>
-        <span id="url-nohon">mkubpom.github.io/bigmobile/#nohon</span>
-        <i class="ti ti-copy" style="opacity:.7"></i>
-      </div>
+      <p>รายการราคาสินค้า NOHON ทุกรุ่น</p>
     </div>
-    <div id="nohon-admin" style="display:none">
-      <div class="upload-area" id="upa" onclick="document.getElementById('pdfinput').click()"
-           ondragover="event.preventDefault();this.classList.add('dv')"
-           ondragleave="this.classList.remove('dv')" ondrop="dropPdf(event)">
+
+    <!-- แอดมิน: ใส่ลิงก์ PDF -->
+    <div id="nohon-admin-panel" class="nohon-admin-panel" style="display:none">
+      <h3><i class="ti ti-settings" style="font-size:13px"></i> ตั้งค่า PDF (แอดมินเท่านั้น)</h3>
+      <div class="url-input-wrap">
+        <input class="url-input" id="nohon-url-input" placeholder="วาง Google Drive link ของไฟล์ PDF ที่นี่..."/>
+        <button class="url-save-btn" onclick="saveNohonUrl()"><i class="ti ti-device-floppy"></i> บันทึก</button>
+        <button class="ebtn danger" onclick="clearNohonUrl()" style="padding:9px 14px"><i class="ti ti-trash"></i> ล้าง</button>
+      </div>
+      <div class="url-hint">
+        📌 วิธีเอาลิงก์จาก Google Drive:<br>
+        1. อัปโหลด PDF ใน Google Drive → คลิกขวาที่ไฟล์ → <strong>Get link</strong><br>
+        2. เปลี่ยนเป็น <strong>Anyone with the link</strong> → Copy link<br>
+        3. ตัวอย่าง: <code>https://drive.google.com/file/d/xxxxxx/view</code>
+      </div>
+      <div class="url-saved-msg" id="nohon-url-saved"><i class="ti ti-circle-check"></i> บันทึก URL แล้ว</div>
+    </div>
+
+    <!-- แสดง PDF viewer -->
+    <div id="nohon-viewer" class="pdf-viewer-wrap">
+      <!-- มี PDF -->
+      <div id="nohon-has-pdf" style="display:none">
+        <div class="pdf-toolbar">
+          <div class="pdf-toolbar-title">
+            <i class="ti ti-file-type-pdf" style="font-size:16px;color:#f87171"></i>
+            ราคาสินค้า NOHON
+          </div>
+          <a id="nohon-open-link" href="#" target="_blank" class="pdf-open-btn">
+            <i class="ti ti-external-link" style="font-size:13px"></i> เปิดแบบเต็มหน้าจอ
+          </a>
+        </div>
+        <iframe id="nohon-iframe" class="pdf-frame" src="" allowfullscreen></iframe>
+      </div>
+      <!-- ไม่มี PDF -->
+      <div id="nohon-no-pdf" class="pdf-no-url">
         <i class="ti ti-file-type-pdf"></i>
-        <p>คลิกหรือลากไฟล์ PDF มาวางที่นี่</p>
-        <small>รองรับไฟล์ .pdf ขนาดไม่เกิน 10MB</small>
-        <input type="file" id="pdfinput" accept=".pdf" onchange="selectPdf(event)"/>
-        <br>
-        <button class="ubtn" onclick="event.stopPropagation();document.getElementById('pdfinput').click()"><i class="ti ti-upload"></i> เลือกไฟล์ PDF</button>
+        <p>ยังไม่มีรายการราคา NOHON</p>
+        <small>แอดมินกำลังจัดทำข้อมูล</small>
       </div>
-      <div class="aist" id="aist"></div>
-    </div>
-    <div id="nohon-info" class="info-box" style="display:none">
-      <i class="ti ti-info-circle" style="font-size:18px;flex-shrink:0"></i>
-      <span>ยังไม่มีข้อมูลราคา NOHON — แอดมินสามารถอัปโหลด PDF ได้</span>
-    </div>
-    <div id="nohon-loading" class="loading-cnt" style="display:none"><i class="ti ti-loader spin"></i> กำลังโหลด...</div>
-    <div id="nohon-data" style="display:none">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:8px">
-        <span style="font-size:13px;color:#64748b">ข้อมูลจาก PDF ที่อัปโหลด</span>
-        <button class="clr-btn" id="clr-nohon" onclick="clearNohon()" style="display:none"><i class="ti ti-trash"></i> ล้างข้อมูล</button>
-      </div>
-      <div class="ntbl-wrap"><table class="ntbl"><thead id="nthead"></thead><tbody id="ntbody"></tbody></table></div>
     </div>
   </div>
 </div>
@@ -385,23 +370,14 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
 <!-- WARRANTY -->
 <div class="page" id="page-warranty">
   <div class="cpg">
-    <div class="phero">
-      <i class="ti ti-shield-check hico"></i>
-      <h1>รายละเอียดการรับประกัน</h1>
-      <p>เงื่อนไขและรายละเอียดการรับประกันสินค้า</p>
-      <div class="url-badge" onclick="copyUrl('#warranty')">
-        <i class="ti ti-link"></i>
-        <span>mkubpom.github.io/bigmobile/#warranty</span>
-        <i class="ti ti-copy" style="opacity:.7"></i>
-      </div>
-    </div>
+    <div class="phero"><i class="ti ti-shield-check hico"></i><h1>รายละเอียดการรับประกัน</h1><p>เงื่อนไขและรายละเอียดการรับประกันสินค้า Bigmobile</p></div>
     <div id="warranty-tb" style="display:none" class="etb">
       <button class="ebtn pri" id="wsave-btn" onclick="saveContent('warranty')"><i class="ti ti-device-floppy"></i> บันทึก</button>
       <button class="ebtn" onclick="togglePreview('warranty')"><i class="ti ti-eye"></i> <span id="wtoggle-txt">แก้ไข</span></button>
       <div class="sconf" id="wsaved"><i class="ti ti-circle-check"></i> บันทึกลง Sheets แล้ว</div>
     </div>
     <div id="warranty-editor-wrap" style="display:none">
-      <textarea class="ceditor" id="warranty-ed" placeholder="พิมพ์รายละเอียดการรับประกัน...&#10;รองรับ HTML เช่น &lt;h2&gt;หัวข้อ&lt;/h2&gt; &lt;p&gt;เนื้อหา&lt;/p&gt;"></textarea>
+      <textarea class="ceditor" id="warranty-ed" placeholder="พิมพ์รายละเอียดการรับประกัน...&#10;รองรับ HTML เช่น &lt;h2&gt;หัวข้อ&lt;/h2&gt; &lt;p&gt;เนื้อหา&lt;/p&gt; &lt;ul&gt;&lt;li&gt;รายการ&lt;/li&gt;&lt;/ul&gt;"></textarea>
     </div>
     <div id="warranty-loading" class="loading-cnt" style="display:none"><i class="ti ti-loader spin"></i> กำลังโหลด...</div>
     <div id="warranty-display" class="cdisplay"></div>
@@ -411,23 +387,14 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
 <!-- CONTACT -->
 <div class="page" id="page-contact">
   <div class="cpg">
-    <div class="phero">
-      <i class="ti ti-message-circle hico"></i>
-      <h1>ติดต่อสอบถาม</h1>
-      <p>ช่องทางการติดต่อและสอบถามของ Bigmobile</p>
-      <div class="url-badge" onclick="copyUrl('#contact')">
-        <i class="ti ti-link"></i>
-        <span>mkubpom.github.io/bigmobile/#contact</span>
-        <i class="ti ti-copy" style="opacity:.7"></i>
-      </div>
-    </div>
+    <div class="phero"><i class="ti ti-message-circle hico"></i><h1>ติดต่อสอบถาม</h1><p>ช่องทางการติดต่อและสอบถามของ Bigmobile</p></div>
     <div id="contact-tb" style="display:none" class="etb">
       <button class="ebtn pri" id="csave-btn" onclick="saveContent('contact')"><i class="ti ti-device-floppy"></i> บันทึก</button>
       <button class="ebtn" onclick="togglePreview('contact')"><i class="ti ti-eye"></i> <span id="ctoggle-txt">แก้ไข</span></button>
       <div class="sconf" id="csaved"><i class="ti ti-circle-check"></i> บันทึกลง Sheets แล้ว</div>
     </div>
     <div id="contact-editor-wrap" style="display:none">
-      <textarea class="ceditor" id="contact-ed" placeholder="พิมพ์ข้อมูลการติดต่อ...&#10;รองรับ HTML เช่น &lt;h2&gt;ช่องทางติดต่อ&lt;/h2&gt;"></textarea>
+      <textarea class="ceditor" id="contact-ed" placeholder="พิมพ์ข้อมูลการติดต่อ...&#10;รองรับ HTML เช่น &lt;h2&gt;ช่องทางติดต่อ&lt;/h2&gt; &lt;p&gt;📱 Line: @bigmobile&lt;/p&gt;"></textarea>
     </div>
     <div id="contact-loading" class="loading-cnt" style="display:none"><i class="ti ti-loader spin"></i> กำลังโหลด...</div>
     <div id="contact-display" class="cdisplay"></div>
@@ -444,90 +411,37 @@ body{font-family:'Sarabun',system-ui,sans-serif;background:#f8fafc}
       <label>รหัสผ่าน</label><input id="lp" type="password" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()"/>
     </div>
     <div class="lerr" id="lerr" style="display:none"><i class="ti ti-alert-circle"></i> ไม่ถูกต้อง</div>
-    <div class="lrow">
-      <button class="lcnl" onclick="closeLogin()">ยกเลิก</button>
-      <button class="lgo" onclick="doLogin()">เข้าสู่ระบบ</button>
-    </div>
+    <div class="lrow"><button class="lcnl" onclick="closeLogin()">ยกเลิก</button><button class="lgo" onclick="doLogin()">เข้าสู่ระบบ</button></div>
   </div>
 </div>
-
-</div><!-- #app -->
-
-<!-- COPY TOAST -->
-<div class="copy-toast" id="copy-toast"><i class="ti ti-check"></i> คัดลอก URL แล้ว</div>
+</div>
 
 <script>
 const GAS='https://script.google.com/macros/s/AKfycbxYAezQkiysCWpeZz_j2p_-uZB41LZdjthTCUOfDtNmf0hqCZog8aLbxyh6ZH_bQnxr/exec';
 const AU='admin',AP='bigmobile4503';
 const BASE_URL=window.location.origin+window.location.pathname;
-const MK={
-  'iPhone':'รุ่น','IPad':'รุ่น','Apple Watch ':'รุ่น',
-  'Samsung':'รายการ/รุ่น','TAB':'รายการ/รุ่น','จอพับ Filp-Fold':'รายการ/รุ่น',
-  'ViVo':'รุ่น','OPPO':'รายการ/รุ่น','Huawei':'รุ่น',
-  'แพรชาร์จแท้แกะ':'รุ่น','สายแพร SAMSUNG Filp-Fold แท้':'รายการ/รุ่น',
-  'กล้องหลังแท้แกะ':'รุ่น','แพร Face ID config ได้':'รุ่น',
-  'แบตแท้ Config ได้ (ขึ้นใช้แล้ว)':'รายการ/รุ่น',
-  'แบตแท้ Config ได้ (ขึ้น ของแท้) ':'รายการ/รุ่น',
-  'ฝาหลังแท้แกะ SAMSUNG':'รุ่น','OCA + Touch IPad ':'รายการ/รุ่น'
-};
-// pages ที่มี hash routing
 const HASH_PAGES=['nohon','warranty','contact'];
-let isAdmin=false,curTab='',allTabs=[],products=[],curHeaders=[];
-let tabCache={},preloadDone=false;
+const MK={'iPhone':'รุ่น','IPad':'รุ่น','Apple Watch ':'รุ่น','Samsung':'รายการ/รุ่น','TAB':'รายการ/รุ่น','จอพับ Filp-Fold':'รายการ/รุ่น','ViVo':'รุ่น','OPPO':'รายการ/รุ่น','Huawei':'รุ่น','แพรชาร์จแท้แกะ':'รุ่น','สายแพร SAMSUNG Filp-Fold แท้':'รายการ/รุ่น','กล้องหลังแท้แกะ':'รุ่น','แพร Face ID config ได้':'รุ่น','แบตแท้ Config ได้ (ขึ้นใช้แล้ว)':'รายการ/รุ่น','แบตแท้ Config ได้ (ขึ้น ของแท้) ':'รายการ/รุ่น','ฝาหลังแท้แกะ SAMSUNG':'รุ่น','OCA + Touch IPad ':'รายการ/รุ่น'};
+let isAdmin=false,curTab='',allTabs=[],products=[],curHeaders=[],tabCache={},preloadDone=false;
 
 /* ── HASH ROUTING ── */
-function getPageFromHash(){
-  const h=location.hash.replace('#','');
-  return HASH_PAGES.includes(h)?h:null;
-}
-function setHash(page){
-  if(HASH_PAGES.includes(page)){
-    history.pushState(null,'',BASE_URL+'#'+page);
-  }else{
-    // home หรือ price ไม่มี hash (หรือลบ hash ออก)
-    history.pushState(null,'',BASE_URL+(page==='price'?'#price':''));
-  }
-}
-// ฟัง back/forward ของ browser
-window.addEventListener('popstate',()=>{
-  const page=getPageFromHash();
-  if(page) showPageDirect(page);
-  else showPageDirect('home');
-});
-
-/* ── COPY URL ── */
-function copyUrl(hash){
-  const url=BASE_URL+hash;
-  navigator.clipboard.writeText(url).catch(()=>{});
-  const toast=document.getElementById('copy-toast');
-  toast.classList.add('show');
-  setTimeout(()=>toast.classList.remove('show'),2500);
-}
+function getHash(){const h=location.hash.replace('#','');return HASH_PAGES.includes(h)?h:null;}
+function setHash(p){history.pushState(null,'',BASE_URL+(HASH_PAGES.includes(p)?'#'+p:p==='price'?'#price':''));}
+window.addEventListener('popstate',()=>showPageDirect(getHash()||'home'));
 
 /* ── DROPDOWN ── */
 function toggleDD(id,e){
   e.stopPropagation();
-  const item=document.getElementById(id);
-  const dd=item.querySelector('.dropdown');
-  const wasOpen=item.classList.contains('open');
+  const item=document.getElementById(id);const dd=item.querySelector('.dropdown');const wasOpen=item.classList.contains('open');
   closeAllDD();
-  if(!wasOpen){
-    item.classList.add('open');
-    const btn=item.querySelector('.nav-link');
-    const rect=btn.getBoundingClientRect();
-    dd.style.left=rect.left+'px';
-    dd.style.minWidth=Math.max(240,rect.width)+'px';
-  }
+  if(!wasOpen){item.classList.add('open');const rect=item.querySelector('.nav-link').getBoundingClientRect();dd.style.left=rect.left+'px';dd.style.minWidth=Math.max(240,rect.width)+'px';}
 }
-function closeAllDD(){
-  document.querySelectorAll('.nav-item.open').forEach(el=>el.classList.remove('open'));
-}
+function closeAllDD(){document.querySelectorAll('.nav-item.open').forEach(el=>el.classList.remove('open'));}
 document.addEventListener('click',()=>closeAllDD());
 window.addEventListener('scroll',()=>closeAllDD(),{passive:true});
 
 /* ── PAGE NAV ── */
 function showPageDirect(name){
-  // เปิด page โดยไม่ push history (ใช้ใน popstate)
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.getElementById('page-'+name).classList.add('active');
   closeAllDD();
@@ -536,325 +450,170 @@ function showPageDirect(name){
   const nl=document.getElementById('nl-'+name);if(nl)nl.classList.add('cur');
   if(name==='warranty')loadContent('warranty');
   if(name==='contact')loadContent('contact');
-  if(name==='nohon')loadNohon();
+  if(name==='nohon')renderNohon();
   window.scrollTo(0,0);
 }
-function gotoPage(name){
-  showPageDirect(name);
-  setHash(name);
+function gotoPage(name){showPageDirect(name);setHash(name);}
+function goToTab(tab){showPageDirect('price');setHash('price');closeAllDD();document.getElementById('tab-title').textContent=tab.trim();clearGS(false);loadTab(tab);}
+function homeSearch(){const q=document.getElementById('hsearch').value.trim();if(!q)return;gotoPage('price');setTimeout(()=>{document.getElementById('gsinput').value=q;doGS();},80);}
+
+/* ── NOHON PDF VIEWER ── */
+function driveUrlToEmbed(url){
+  // แปลง Google Drive share link → embed URL
+  // รูปแบบ: https://drive.google.com/file/d/FILE_ID/view
+  const m=url.match(/\/file\/d\/([^/]+)/);
+  if(m) return 'https://drive.google.com/file/d/'+m[1]+'/preview';
+  // ถ้าใส่มาเป็น embed URL อยู่แล้ว
+  if(url.includes('drive.google.com')) return url.replace('/view','/preview');
+  return url;
 }
-function goToTab(tab){
-  showPageDirect('price');
-  setHash('price');
-  closeAllDD();
-  document.getElementById('tab-title').textContent=tab.trim();
-  clearGS(false);loadTab(tab);
+function renderNohon(){
+  const saved=localStorage.getItem('bm_nohon_url')||'';
+  if(isAdmin){
+    document.getElementById('nohon-admin-panel').style.display='';
+    document.getElementById('nohon-url-input').value=saved;
+  }
+  if(saved){
+    const embedUrl=driveUrlToEmbed(saved);
+    document.getElementById('nohon-iframe').src=embedUrl;
+    document.getElementById('nohon-open-link').href=saved;
+    document.getElementById('nohon-has-pdf').style.display='';
+    document.getElementById('nohon-no-pdf').style.display='none';
+  }else{
+    document.getElementById('nohon-has-pdf').style.display='none';
+    document.getElementById('nohon-no-pdf').style.display='';
+  }
 }
-function homeSearch(){
-  const q=document.getElementById('hsearch').value.trim();if(!q)return;
-  gotoPage('price');
-  setTimeout(()=>{document.getElementById('gsinput').value=q;doGS();},80);
+function saveNohonUrl(){
+  const url=document.getElementById('nohon-url-input').value.trim();
+  localStorage.setItem('bm_nohon_url',url);
+  const msg=document.getElementById('nohon-url-saved');
+  msg.classList.add('show');setTimeout(()=>msg.classList.remove('show'),3000);
+  renderNohon();
+}
+function clearNohonUrl(){
+  if(!confirm('ล้าง PDF ออก?'))return;
+  localStorage.removeItem('bm_nohon_url');
+  document.getElementById('nohon-url-input').value='';
+  renderNohon();
 }
 
 /* ── PRICE DATA ── */
 function mk(tab){return MK[tab]||MK[tab.trim()]||'รุ่น';}
-function setSync(s,msg){
-  document.getElementById('sdot').className='sdot '+(s==='ok'?'ok':s==='err'?'err':'ld');
-  document.getElementById('stxt').textContent=msg;
-}
-function fmt(v){
-  if(v===''||v===null||v===undefined)return '';
-  const n=parseFloat(v);if(isNaN(n)||n===0)return '';
-  return '฿'+Math.round(n).toLocaleString('th-TH');
-}
-function hl(t,q){
-  if(!q)return String(t);
-  return String(t).replace(new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'),'<span class="hl">$1</span>');
-}
+function setSync(s,msg){document.getElementById('sdot').className='sdot '+(s==='ok'?'ok':s==='err'?'err':'ld');document.getElementById('stxt').textContent=msg;}
+function fmt(v){if(v===''||v===null||v===undefined)return '';const n=parseFloat(v);if(isNaN(n)||n===0)return '';return '฿'+Math.round(n).toLocaleString('th-TH');}
+function hl(t,q){if(!q)return String(t);return String(t).replace(new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'),'<span class="hl">$1</span>');}
 function parseTD(json,tab){
-  const m=mk(tab);
-  const hdrs=json.data&&json.data.length>0?Object.keys(json.data[0]).filter(k=>k!=='cat'):[];
+  const m=mk(tab);const hdrs=json.data&&json.data.length>0?Object.keys(json.data[0]).filter(k=>k!=='cat'):[];
   const rows=(json.data||[]).filter(r=>{const v=r[m];return v!==undefined&&String(v).trim()!==''&&String(v).trim()!=='-';});
   return{headers:hdrs,rows};
 }
 function buildTabs(tabs){allTabs=tabs;}
 function renderHeaders(){
-  const m=mk(curTab);
-  const pks=curHeaders.filter(h=>h&&h!==m&&String(h).trim()!=='');
+  const m=mk(curTab);const pks=curHeaders.filter(h=>h&&h!==m&&String(h).trim()!=='');
   document.getElementById('thead').innerHTML='<tr><th>'+m+'</th>'+pks.map(h=>'<th>'+h+'</th>').join('')+(isAdmin?'<th style="width:44px">ลบ</th>':'')+' </tr>';
   if(isAdmin)document.getElementById('f-col').innerHTML=pks.map(h=>`<option value="${h}">${h}</option>`).join('');
 }
 function renderTbl(){
-  const q=document.getElementById('srch').value.toLowerCase();
-  const m=mk(curTab);
-  const pks=curHeaders.filter(h=>h&&h!==m&&String(h).trim()!=='');
-  let rows=products;
-  if(q)rows=rows.filter(p=>String(p[m]||'').toLowerCase().includes(q));
-  document.getElementById('stat-pill').textContent=rows.length+' รายการ';
-  document.getElementById('rcnt').textContent='แสดง '+rows.length+' จาก '+products.length+' รายการ';
+  const q=document.getElementById('srch').value.toLowerCase();const m=mk(curTab);const pks=curHeaders.filter(h=>h&&h!==m&&String(h).trim()!=='');
+  let rows=products;if(q)rows=rows.filter(p=>String(p[m]||'').toLowerCase().includes(q));
+  document.getElementById('stat-pill').textContent=rows.length+' รายการ';document.getElementById('rcnt').textContent='แสดง '+rows.length+' จาก '+products.length+' รายการ';
   const tb=document.getElementById('tbody');
   if(!rows.length){tb.innerHTML=`<tr class="empty-row"><td colspan="${pks.length+1+(isAdmin?1:0)}"><i class="ti ti-mood-empty" style="font-size:28px;display:block;margin-bottom:6px;opacity:.3"></i>ไม่พบข้อมูล</td></tr>`;return;}
   tb.innerHTML=rows.map(p=>{
-    const ri=products.indexOf(p);
-    const mv=String(p[m]||'').replace(/^-\s*/,'');
+    const ri=products.indexOf(p);const mv=String(p[m]||'').replace(/^-\s*/,'');
     const cells=pks.map(h=>{const v=fmt(p[h]);return '<td>'+(v?'<span class="pv">'+v+'</span>':'<span class="nt">—</span>')+'</td>';}).join('');
     const del=isAdmin?`<td><button class="del-btn" onclick="delProd(${ri})"><i class="ti ti-trash"></i></button></td>`:'';
     return `<tr><td style="font-weight:600">${mv}</td>${cells}${del}</tr>`;
   }).join('');
 }
 async function loadTab(tab){
-  curTab=tab;
-  document.getElementById('tab-title').textContent=tab.trim();
-  const ico=document.getElementById('ref-ico');ico.classList.add('spin');
-  setSync('ld','กำลังโหลด '+tab.trim()+'...');
+  curTab=tab;document.getElementById('tab-title').textContent=tab.trim();
+  const ico=document.getElementById('ref-ico');ico.classList.add('spin');setSync('ld','กำลังโหลด '+tab.trim()+'...');
   try{
     if(tabCache[tab]){curHeaders=tabCache[tab].headers;products=tabCache[tab].rows;}
-    else{
-      const res=await fetch(GAS+'?tab='+encodeURIComponent(tab));
-      const json=await res.json();
-      if(json.tabs&&!allTabs.length)buildTabs(json.tabs);
-      const d=parseTD(json,tab);tabCache[tab]=d;curHeaders=d.headers;products=d.rows;
-    }
-    renderHeaders();renderTbl();
-    setSync('ok','ซิงค์แล้ว · '+tab.trim()+' · '+new Date().toLocaleTimeString('th-TH'));
+    else{const res=await fetch(GAS+'?tab='+encodeURIComponent(tab));const json=await res.json();if(json.tabs&&!allTabs.length)buildTabs(json.tabs);const d=parseTD(json,tab);tabCache[tab]=d;curHeaders=d.headers;products=d.rows;}
+    renderHeaders();renderTbl();setSync('ok','ซิงค์แล้ว · '+tab.trim()+' · '+new Date().toLocaleTimeString('th-TH'));
   }catch(e){setSync('err','โหลดไม่ได้: '+e.message);}
   ico.classList.remove('spin');
 }
 async function reloadTab(){delete tabCache[curTab];await loadTab(curTab);}
 async function preloadAll(tabs){
-  const fill=document.getElementById('pfill'),st=document.getElementById('pstatus');
-  let done=0;
-  await Promise.all(tabs.map(tab=>
-    fetch(GAS+'?tab='+encodeURIComponent(tab)).then(r=>r.json())
-      .then(json=>{tabCache[tab]=parseTD(json,tab);done++;fill.style.width=Math.round((done/tabs.length)*100)+'%';})
-      .catch(()=>{done++;fill.style.width=Math.round((done/tabs.length)*100)+'%';})
-  ));
-  preloadDone=true;
-  st.className='pstatus ready';
-  st.innerHTML='<i class="ti ti-circle-check" style="font-size:11px"></i> โหลดครบ '+tabs.length+' Tab';
+  const fill=document.getElementById('pfill'),st=document.getElementById('pstatus');let done=0;
+  await Promise.all(tabs.map(tab=>fetch(GAS+'?tab='+encodeURIComponent(tab)).then(r=>r.json()).then(json=>{tabCache[tab]=parseTD(json,tab);done++;fill.style.width=Math.round((done/tabs.length)*100)+'%';}).catch(()=>{done++;fill.style.width=Math.round((done/tabs.length)*100)+'%';})));
+  preloadDone=true;st.className='pstatus ready';st.innerHTML='<i class="ti ti-circle-check" style="font-size:11px"></i> โหลดครบ '+tabs.length+' Tab';
 }
 async function init(){
-  // โหลดหน้าตาม hash ทันที
-  const initPage=getPageFromHash();
-  if(initPage)showPageDirect(initPage);
-  // preload iPhone data
-  try{
-    const res=await fetch(GAS+'?tab=iPhone');
-    const json=await res.json();
-    const tabs=json.tabs||[];buildTabs(tabs);
-    tabCache['iPhone']=parseTD(json,'iPhone');
-    preloadAll(tabs.filter(t=>t!=='iPhone'));
-  }catch(e){console.error(e);}
+  const initPage=getHash();if(initPage)showPageDirect(initPage);
+  try{const res=await fetch(GAS+'?tab=iPhone');const json=await res.json();const tabs=json.tabs||[];buildTabs(tabs);tabCache['iPhone']=parseTD(json,'iPhone');preloadAll(tabs.filter(t=>t!=='iPhone'));}
+  catch(e){console.error(e);}
 }
 
 /* ── GLOBAL SEARCH ── */
 function doGS(){
   const q=document.getElementById('gsinput').value.trim();if(!q)return;
-  if(!preloadDone){
-    const loaded=Object.keys(tabCache).length;
-    document.getElementById('gsres').innerHTML=`<div class="nores"><i class="ti ti-loader spin" style="font-size:32px;opacity:.5"></i><p style="margin-top:10px">กำลังโหลด ${loaded}/${allTabs.length||17} Tab กรุณารอ...</p></div>`;
-    document.getElementById('tab-view').style.display='none';document.getElementById('toolbar').style.display='none';document.getElementById('sbar').style.display='none';
-    document.getElementById('gsres').style.display='';document.getElementById('gclr').style.display='';return;
-  }
+  if(!preloadDone){const loaded=Object.keys(tabCache).length;document.getElementById('gsres').innerHTML=`<div class="nores"><i class="ti ti-loader spin" style="font-size:32px;opacity:.5"></i><p style="margin-top:10px">กำลังโหลด ${loaded}/${allTabs.length||17} Tab กรุณารอ...</p></div>`;document.getElementById('tab-view').style.display='none';document.getElementById('toolbar').style.display='none';document.getElementById('sbar').style.display='none';document.getElementById('gsres').style.display='';document.getElementById('gclr').style.display='';return;}
   const ql=q.toLowerCase();let total=0;const secs=[];
-  for(const tab of allTabs){
-    const d=tabCache[tab];if(!d)continue;
-    const m=mk(tab);
-    const matched=d.rows.filter(r=>String(r[m]||'').toLowerCase().includes(ql));
-    if(!matched.length)continue;total+=matched.length;
-    const pks=d.headers.filter(h=>h&&h!==m&&String(h).trim()!=='');
-    const rows=matched.map(p=>{
-      const mv=String(p[m]||'').replace(/^-\s*/,'');
-      const cells=pks.map(h=>{const v=fmt(p[h]);return '<td>'+(v?'<span class="pv">'+v+'</span>':'<span class="nt">—</span>')+'</td>';}).join('');
-      return `<tr><td style="font-weight:600">${hl(mv,q)}</td>${cells}</tr>`;
-    }).join('');
-    secs.push(`<div class="tsec"><div class="tshdr"><span class="tbadge"><i class="ti ti-table" style="font-size:12px"></i>${tab.trim()}<span class="tbadge-cnt">${matched.length}</span></span><button class="gtbtn" onclick="goToTab('${tab.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')"><i class="ti ti-arrow-right" style="font-size:11px"></i> ไปที่ Tab นี้</button></div><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>${m}</th>${pks.map(h=>'<th>'+h+'</th>').join('')}</tr></thead><tbody>${rows}</tbody></table></div></div>`);
-  }
-  const el=document.getElementById('gsres');
-  el.innerHTML=total===0?`<div class="nores"><i class="ti ti-search-off"></i><p>ไม่พบ "<strong>${q}</strong>" ในทุก Tab</p></div>`:`<div class="gssummary"><span>ผลการค้นหา "<strong>${q}</strong>"</span><span class="fpill">พบ ${total} รายการ ใน ${secs.length} Tab</span></div>${secs.join('')}`;
-  document.getElementById('tab-view').style.display='none';document.getElementById('toolbar').style.display='none';document.getElementById('sbar').style.display='none';
-  el.style.display='';document.getElementById('gclr').style.display='';
+  for(const tab of allTabs){const d=tabCache[tab];if(!d)continue;const m=mk(tab);const matched=d.rows.filter(r=>String(r[m]||'').toLowerCase().includes(ql));if(!matched.length)continue;total+=matched.length;const pks=d.headers.filter(h=>h&&h!==m&&String(h).trim()!=='');const rows=matched.map(p=>{const mv=String(p[m]||'').replace(/^-\s*/,'');const cells=pks.map(h=>{const v=fmt(p[h]);return '<td>'+(v?'<span class="pv">'+v+'</span>':'<span class="nt">—</span>')+'</td>';}).join('');return `<tr><td style="font-weight:600">${hl(mv,q)}</td>${cells}</tr>`;}).join('');secs.push(`<div class="tsec"><div class="tshdr"><span class="tbadge"><i class="ti ti-table" style="font-size:12px"></i>${tab.trim()}<span class="tbadge-cnt">${matched.length}</span></span><button class="gtbtn" onclick="goToTab('${tab.replace(/\\/g,'\\\\').replace(/'/g,"\\'")}')"><i class="ti ti-arrow-right" style="font-size:11px"></i> ไปที่ Tab นี้</button></div><div style="overflow-x:auto"><table class="tbl"><thead><tr><th>${m}</th>${pks.map(h=>'<th>'+h+'</th>').join('')}</tr></thead><tbody>${rows}</tbody></table></div></div>`);}
+  const el=document.getElementById('gsres');el.innerHTML=total===0?`<div class="nores"><i class="ti ti-search-off"></i><p>ไม่พบ "<strong>${q}</strong>" ในทุก Tab</p></div>`:`<div class="gssummary"><span>ผลการค้นหา "<strong>${q}</strong>"</span><span class="fpill">พบ ${total} รายการ ใน ${secs.length} Tab</span></div>${secs.join('')}`;
+  document.getElementById('tab-view').style.display='none';document.getElementById('toolbar').style.display='none';document.getElementById('sbar').style.display='none';el.style.display='';document.getElementById('gclr').style.display='';
 }
-function clearGS(focus=true){
-  document.getElementById('gsres').style.display='none';
-  document.getElementById('tab-view').style.display='';document.getElementById('toolbar').style.display='';document.getElementById('sbar').style.display='';
-  document.getElementById('gclr').style.display='none';
-  if(focus)document.getElementById('gsinput').value='';
-}
+function clearGS(focus=true){document.getElementById('gsres').style.display='none';document.getElementById('tab-view').style.display='';document.getElementById('toolbar').style.display='';document.getElementById('sbar').style.display='';document.getElementById('gclr').style.display='none';if(focus)document.getElementById('gsinput').value='';}
 
 /* ── ADMIN ── */
 function handleAdmin(){
   if(isAdmin){
-    isAdmin=false;
-    document.getElementById('admin-btn').classList.remove('on');
-    document.getElementById('admin-txt').textContent=' แอดมิน';
-    document.getElementById('add-panel').style.display='none';
-    document.getElementById('nohon-admin').style.display='none';
-    document.getElementById('clr-nohon').style.display='none';
-    document.getElementById('warranty-tb').style.display='none';
-    document.getElementById('contact-tb').style.display='none';
-    document.getElementById('warranty-editor-wrap').style.display='none';
-    document.getElementById('contact-editor-wrap').style.display='none';
+    isAdmin=false;document.getElementById('admin-btn').classList.remove('on');document.getElementById('admin-txt').textContent=' แอดมิน';
+    document.getElementById('add-panel').style.display='none';document.getElementById('nohon-admin-panel').style.display='none';
+    document.getElementById('warranty-tb').style.display='none';document.getElementById('contact-tb').style.display='none';
+    document.getElementById('warranty-editor-wrap').style.display='none';document.getElementById('contact-editor-wrap').style.display='none';
     renderHeaders();renderTbl();
-  }else{
-    document.getElementById('lov').style.display='flex';
-    setTimeout(()=>document.getElementById('lu').focus(),100);
-  }
+  }else{document.getElementById('lov').style.display='flex';setTimeout(()=>document.getElementById('lu').focus(),100);}
 }
-function closeLogin(){
-  document.getElementById('lov').style.display='none';
-  document.getElementById('lu').value='';document.getElementById('lp').value='';
-  document.getElementById('lerr').style.display='none';
-}
+function closeLogin(){document.getElementById('lov').style.display='none';document.getElementById('lu').value='';document.getElementById('lp').value='';document.getElementById('lerr').style.display='none';}
 function doLogin(){
-  const u=document.getElementById('lu').value.trim();
-  const p=document.getElementById('lp').value;
+  const u=document.getElementById('lu').value.trim();const p=document.getElementById('lp').value;
   if(u===AU&&p===AP){
-    isAdmin=true;closeLogin();
-    document.getElementById('admin-btn').classList.add('on');
-    document.getElementById('admin-txt').textContent=' ออกจากระบบ';
-    document.getElementById('add-panel').style.display='';
-    document.getElementById('nohon-admin').style.display='';
-    document.getElementById('clr-nohon').style.display='';
-    document.getElementById('warranty-tb').style.display='flex';
-    document.getElementById('contact-tb').style.display='flex';
-    renderHeaders();renderTbl();
+    isAdmin=true;closeLogin();document.getElementById('admin-btn').classList.add('on');document.getElementById('admin-txt').textContent=' ออกจากระบบ';
+    document.getElementById('add-panel').style.display='';document.getElementById('nohon-admin-panel').style.display='';
+    document.getElementById('warranty-tb').style.display='flex';document.getElementById('contact-tb').style.display='flex';
+    renderHeaders();renderTbl();renderNohon();
   }else{document.getElementById('lerr').style.display='flex';}
 }
 async function addProduct(){
-  const model=document.getElementById('f-model').value.trim();
-  const col=document.getElementById('f-col').value;
-  const price=document.getElementById('f-price').value;
-  if(!model||!price)return;
-  const btn=document.getElementById('save-btn'),msg=document.getElementById('smsg');
-  btn.disabled=true;msg.className='smsg wait';msg.innerHTML='<i class="ti ti-loader spin"></i> กำลังบันทึก...';
-  const m=mk(curTab);
-  try{
-    await fetch(GAS,{method:'POST',mode:'no-cors',body:JSON.stringify({action:'add',tab:curTab,modelKey:m,model,priceCol:col,price})});
-    msg.innerHTML='<i class="ti ti-loader spin"></i> รอ Sheets...';
-    await new Promise(r=>setTimeout(r,2000));
-    delete tabCache[curTab];await loadTab(curTab);
-    document.getElementById('f-model').value='';document.getElementById('f-price').value='';
-    msg.className='smsg ok';msg.innerHTML='<i class="ti ti-circle-check"></i> บันทึกสำเร็จ';
-    setTimeout(()=>{msg.innerHTML='';msg.className='smsg';},5000);
-  }catch(e){msg.className='smsg err';msg.innerHTML='<i class="ti ti-alert-circle"></i> '+e.message;}
+  const model=document.getElementById('f-model').value.trim();const col=document.getElementById('f-col').value;const price=document.getElementById('f-price').value;if(!model||!price)return;
+  const btn=document.getElementById('save-btn'),msg=document.getElementById('smsg');btn.disabled=true;msg.className='smsg wait';msg.innerHTML='<i class="ti ti-loader spin"></i> กำลังบันทึก...';const m=mk(curTab);
+  try{await fetch(GAS,{method:'POST',mode:'no-cors',body:JSON.stringify({action:'add',tab:curTab,modelKey:m,model,priceCol:col,price})});msg.innerHTML='<i class="ti ti-loader spin"></i> รอ Sheets...';await new Promise(r=>setTimeout(r,2000));delete tabCache[curTab];await loadTab(curTab);document.getElementById('f-model').value='';document.getElementById('f-price').value='';msg.className='smsg ok';msg.innerHTML='<i class="ti ti-circle-check"></i> บันทึกสำเร็จ';setTimeout(()=>{msg.innerHTML='';msg.className='smsg';},5000);}
+  catch(e){msg.className='smsg err';msg.innerHTML='<i class="ti ti-alert-circle"></i> '+e.message;}
   btn.disabled=false;
 }
 async function delProd(idx){
-  const p=products[idx];const m=mk(curTab);
-  if(!confirm('ลบ "'+String(p[m]||'').replace(/^-\s*/,'')+'" ?'))return;
-  try{
-    await fetch(GAS,{method:'POST',mode:'no-cors',body:JSON.stringify({action:'delete',tab:curTab,modelKey:m,model:p[m]})});
-    await new Promise(r=>setTimeout(r,2000));delete tabCache[curTab];await loadTab(curTab);
-  }catch(e){alert('ลบไม่สำเร็จ: '+e.message);}
+  const p=products[idx];const m=mk(curTab);if(!confirm('ลบ "'+String(p[m]||'').replace(/^-\s*/,'')+'" ?'))return;
+  try{await fetch(GAS,{method:'POST',mode:'no-cors',body:JSON.stringify({action:'delete',tab:curTab,modelKey:m,model:p[m]})});await new Promise(r=>setTimeout(r,2000));delete tabCache[curTab];await loadTab(curTab);}
+  catch(e){alert('ลบไม่สำเร็จ');}
 }
 
 /* ── CONTENT ── */
 async function loadContent(page){
-  const disp=document.getElementById(page+'-display');
-  const loading=document.getElementById(page+'-loading');
+  const disp=document.getElementById(page+'-display'),loading=document.getElementById(page+'-loading');
   loading.style.display='block';disp.style.display='none';
-  try{
-    const res=await fetch(GAS+'?action=getContent&key='+page);
-    const json=await res.json();
-    const val=json.value||'';
-    document.getElementById(page+'-ed').value=val;
-    disp.innerHTML=val||`<div class="empty-cnt"><i class="ti ti-pencil-plus"></i><p>${isAdmin?'กดแก้ไขเพื่อเพิ่มข้อมูล':'ยังไม่มีข้อมูล — แอดมินกำลังจัดทำ'}</p></div>`;
-  }catch(e){disp.innerHTML=`<div class="empty-cnt"><i class="ti ti-wifi-off"></i><p>โหลดไม่ได้</p></div>`;}
+  try{const res=await fetch(GAS+'?action=getContent&key='+page);const json=await res.json();const val=json.value||'';document.getElementById(page+'-ed').value=val;disp.innerHTML=val||`<div class="empty-cnt"><i class="ti ti-pencil-plus"></i><p>${isAdmin?'กดปุ่ม "แก้ไข" เพื่อเพิ่มข้อมูล':'ยังไม่มีข้อมูล — แอดมินกำลังจัดทำ'}</p></div>`;}
+  catch(e){disp.innerHTML=`<div class="empty-cnt"><i class="ti ti-wifi-off"></i><p>โหลดไม่ได้</p></div>`;}
   loading.style.display='none';disp.style.display='';
 }
 function togglePreview(page){
-  const ew=document.getElementById(page+'-editor-wrap');
-  const disp=document.getElementById(page+'-display');
-  const pid=page.charAt(0);
-  const txtEl=document.getElementById(pid+'toggle-txt');
-  const isEdit=ew.style.display!=='none';
-  if(isEdit){
-    const content=document.getElementById(page+'-ed').value;
-    disp.innerHTML=content||`<div class="empty-cnt"><i class="ti ti-pencil-plus"></i><p>ยังไม่มีเนื้อหา</p></div>`;
-    ew.style.display='none';disp.style.display='';txtEl.textContent='แก้ไข';
-  }else{
-    ew.style.display='block';disp.style.display='none';txtEl.textContent='ดูตัวอย่าง';
-  }
+  const ew=document.getElementById(page+'-editor-wrap'),disp=document.getElementById(page+'-display'),pid=page.charAt(0),txtEl=document.getElementById(pid+'toggle-txt'),isEdit=ew.style.display!=='none';
+  if(isEdit){const c=document.getElementById(page+'-ed').value;disp.innerHTML=c||`<div class="empty-cnt"><i class="ti ti-pencil-plus"></i><p>ยังไม่มีเนื้อหา</p></div>`;ew.style.display='none';disp.style.display='';txtEl.textContent='แก้ไข';}
+  else{ew.style.display='block';disp.style.display='none';txtEl.textContent='ดูตัวอย่าง';}
 }
 async function saveContent(page){
-  const content=document.getElementById(page+'-ed').value;
-  const pid=page.charAt(0);
-  const btn=document.getElementById(pid+'save-btn');
-  btn.disabled=true;
-  try{
-    await fetch(GAS,{method:'POST',mode:'no-cors',body:JSON.stringify({action:'saveContent',key:page,value:content})});
-    await new Promise(r=>setTimeout(r,1500));
-    const disp=document.getElementById(page+'-display');
-    disp.innerHTML=content||`<div class="empty-cnt"><i class="ti ti-pencil-plus"></i><p>ยังไม่มีเนื้อหา</p></div>`;
-    document.getElementById(page+'-editor-wrap').style.display='none';
-    disp.style.display='';
-    document.getElementById(pid+'toggle-txt').textContent='แก้ไข';
-    const conf=document.getElementById(pid+'saved');
-    conf.classList.add('show');setTimeout(()=>conf.classList.remove('show'),3000);
-  }catch(e){alert('บันทึกไม่สำเร็จ: '+e.message);}
+  const content=document.getElementById(page+'-ed').value;const pid=page.charAt(0);const btn=document.getElementById(pid+'save-btn');btn.disabled=true;
+  try{await fetch(GAS,{method:'POST',mode:'no-cors',body:JSON.stringify({action:'saveContent',key:page,value:content})});await new Promise(r=>setTimeout(r,1500));
+    const disp=document.getElementById(page+'-display');disp.innerHTML=content||`<div class="empty-cnt"><i class="ti ti-pencil-plus"></i><p>ยังไม่มีเนื้อหา</p></div>`;
+    document.getElementById(page+'-editor-wrap').style.display='none';disp.style.display='';document.getElementById(pid+'toggle-txt').textContent='แก้ไข';
+    const conf=document.getElementById(pid+'saved');conf.classList.add('show');setTimeout(()=>conf.classList.remove('show'),3000);}
+  catch(e){alert('บันทึกไม่สำเร็จ');}
   btn.disabled=false;
-}
-
-/* ── NOHON ── */
-async function loadNohon(){
-  const loading=document.getElementById('nohon-loading');
-  const dataEl=document.getElementById('nohon-data');
-  const info=document.getElementById('nohon-info');
-  loading.style.display='block';dataEl.style.display='none';info.style.display='none';
-  try{
-    const res=await fetch(GAS+'?action=getNohon');
-    const json=await res.json();
-    if(json.rows&&json.rows.length>0){
-      renderNohonTbl({headers:json.headers,rows:json.rows});dataEl.style.display='';
-    }else{info.style.display=isAdmin?'none':'flex';}
-  }catch(e){info.style.display='flex';}
-  loading.style.display='none';
-}
-function renderNohonTbl(data){
-  document.getElementById('nthead').innerHTML='<tr>'+data.headers.map(h=>'<th>'+h+'</th>').join('')+'</tr>';
-  document.getElementById('ntbody').innerHTML=data.rows.map(row=>
-    '<tr>'+data.headers.map((h,i)=>`<td${i>0?' class="pc"':''}>${row[i]||''}</td>`).join('')+'</tr>'
-  ).join('');
-}
-async function clearNohon(){
-  if(!confirm('ล้างข้อมูล NOHON ทั้งหมด?'))return;
-  try{
-    await fetch(GAS,{method:'POST',mode:'no-cors',body:JSON.stringify({action:'saveNohon',data:{headers:[],rows:[]}})});
-    document.getElementById('nohon-data').style.display='none';
-    document.getElementById('nohon-info').style.display=isAdmin?'none':'flex';
-  }catch(e){alert('ล้างไม่สำเร็จ');}
-}
-function dropPdf(e){e.preventDefault();document.getElementById('upa').classList.remove('dv');const f=e.dataTransfer.files[0];if(f&&f.type==='application/pdf')processPdf(f);}
-function selectPdf(e){const f=e.target.files[0];if(f)processPdf(f);}
-async function processPdf(file){
-  const st=document.getElementById('aist');
-  st.className='aist proc';
-  st.innerHTML='<i class="ti ti-loader spin" style="font-size:18px"></i><div><strong>กำลังอ่าน PDF ด้วย AI...</strong><br><span style="font-size:12px">กรุณารอสักครู่</span></div>';
-  try{
-    const b64=await new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result.split(',')[1]);r.onerror=rej;r.readAsDataURL(file);});
-    const resp=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:4000,messages:[{role:'user',content:[
-        {type:'document',source:{type:'base64',media_type:'application/pdf',data:b64}},
-        {type:'text',text:`จาก PDF รายการราคาสินค้า NOHON ให้แปลงเป็น JSON เท่านั้น:\n{"headers":["รุ่น","ราคา",...],"rows":[["ชื่อรุ่น","ราคา"],...]}\nกฎ: ราคา=ตัวเลขล้วน, ช่องว่าง="" ตอบ JSON เท่านั้น`}
-      ]}]})
-    });
-    const result=await resp.json();
-    const data=JSON.parse(result.content[0].text.replace(/```json|```/g,'').trim());
-    if(!data.headers||!data.rows||!data.rows.length)throw new Error('ไม่พบข้อมูลใน PDF');
-    st.innerHTML='<i class="ti ti-loader spin" style="font-size:18px"></i><div><strong>กำลังบันทึกลง Google Sheets...</strong></div>';
-    await fetch(GAS,{method:'POST',mode:'no-cors',body:JSON.stringify({action:'saveNohon',data})});
-    await new Promise(r=>setTimeout(r,2000));
-    st.className='aist done';
-    st.innerHTML=`<i class="ti ti-circle-check" style="font-size:18px"></i><div><strong>สำเร็จ!</strong> พบ ${data.rows.length} รายการ บันทึกลง Sheets แล้ว</div>`;
-    renderNohonTbl(data);
-    document.getElementById('nohon-data').style.display='';
-    document.getElementById('nohon-info').style.display='none';
-  }catch(e){
-    st.className='aist fail';
-    st.innerHTML=`<i class="ti ti-alert-circle" style="font-size:18px"></i><div><strong>เกิดข้อผิดพลาด</strong><br><span style="font-size:12px">${e.message}</span></div>`;
-  }
 }
 
 init();
